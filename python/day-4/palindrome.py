@@ -1,5 +1,5 @@
 
-test_list = ["madam", "racecar", "hello", "noon"]
+
 
 def get_palindrome(list):
     result = []
@@ -9,7 +9,7 @@ def get_palindrome(list):
         palindrome = True
         
         while left < right:
-            if string[left] == string[right]:
+            if string[left] != string[right]:
                 palindrome = False
                 break
             left += 1
@@ -19,5 +19,5 @@ def get_palindrome(list):
     
     return result
 
-
+test_list = ["madam", "racecar", "hello", "noon"]
 print(get_palindrome(test_list))
